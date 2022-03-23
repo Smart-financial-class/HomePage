@@ -1,5 +1,7 @@
 <template>
-  
+  <div class="body">
+    主页
+  </div>
 </template>
 
 <script>
