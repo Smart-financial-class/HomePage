@@ -15,11 +15,15 @@ export default {
   props: {
     images: {
       type: Array,
-      required: true
+      default () {
+        return [require('@/assets/1.jpg'), require('@/assets/2.jpg'), require('@/assets/1.jpg'), require('@/assets/2.jpg')]
+      }
     },
     titles: {
       type: Array,
-      required: true
+      default () {
+        return ['1awdijawidhaiwhd', '2aldnlawdlawdoa', '3awkdnalmskkamzxoawjdwagf', '4awkdnawndoawnd', 'awkdghadashdawd']
+      }
     }
   },
   computed: {
