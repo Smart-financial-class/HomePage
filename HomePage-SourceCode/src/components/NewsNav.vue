@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div>111
     <ImgList :images="pics"></ImgList>
     <NewsTitleList :titles="titles"></NewsTitleList>
   </div>
