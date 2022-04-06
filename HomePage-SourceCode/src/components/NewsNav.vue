@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div>111
     <ImgList :images="pics"></ImgList>
     <NewsTitleList :titles="titles"></NewsTitleList>
   </div>
@@ -23,7 +23,7 @@ export default {
     }
   },
   computed: {
-    pics() {
+    pics () {
       return this.images.map((src, index) => {
         return {src, alt: '' + index + '.jpg'}
       })

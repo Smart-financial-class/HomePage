@@ -1,12 +1,21 @@
 <template>
   <div class="body">
     主页
+    <NewsNav :titles="title"></NewsNav>
   </div>
 </template>
 
 <script>
+import NewsNav from '@/components/NewsNav'
+
 export default {
-  name: 'HomePage'
+  name: 'HomePage',
+  components: {NewsNav},
+  data () {
+    return {
+      title: ['Home']
+    }
+  }
 }
 </script>
 
