@@ -1,6 +1,5 @@
 <template>
   <div class="body">
-    主页
     <NewsNav :titles="title"></NewsNav>
   </div>
 </template>

@@ -1,11 +1,7 @@
 <template>
   <div id="ImageListRoot">
-    <div
-        id="img"
-        v-for="(img, index) of images"
-        :key="index"
-        :class="{active: index === active, inactive: index !== active}">
-      <img :src="img.src" :alt="img.alt">
+    <div id="img" v-for="(img, index) of images" :key="index">
+      <transition><img :src="img.src" :alt="img.alt" v-show="index === active"></transition>
     </div>
   </div>
 </template>
@@ -23,7 +19,7 @@ export default {
   mounted () {
     setInterval(() => {
       this.active = (this.active + 1) % this.images.length
-    }, 3000)
+    }, 5000)
   }
 }
 </script>
@@ -31,9 +27,9 @@ export default {
 <style scoped>
 div#ImageListRoot {
   width: 50%;
-  height: auto;
   position: relative;
   display: inline-block;
+  overflow: hidden;
 }
 
 img {
@@ -41,20 +37,27 @@ img {
   height: 100%;
 }
 
+.v-enter-active, .v-leave-active {
+  transition: 1s ease-in-out;
+}
+
+.v-enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.v-enter-to, .v-leave {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.v-leave-to {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
 div#img {
-  transition: all ease-in-out 0.3s;
   position: absolute;
 }
 
-.active {
-  display: block;
-  top: 0;
-  left: 0;
-}
-
-.inactive {
-  display: none;
-  top: 0;
-  left: 100%;
-}
 </style>
