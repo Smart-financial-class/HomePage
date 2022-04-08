@@ -1,7 +1,8 @@
 <template>
   <div class="body">
-    主页
-    <NewsNav :titles="title"></NewsNav>
+    <div id="news">
+      <NewsNav></NewsNav>
+    </div>
   </div>
 </template>
 
@@ -10,7 +11,7 @@ import NewsNav from '@/components/NewsNav'
 
 export default {
   name: 'HomePage',
-  components: {NewsNav},
+  components: { NewsNav },
   data () {
     return {
       title: ['Home']
@@ -20,5 +21,15 @@ export default {
 </script>
 
 <style scoped>
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
+#news {
+  width: 50%;
+  height: 50%;
+}
 </style>
