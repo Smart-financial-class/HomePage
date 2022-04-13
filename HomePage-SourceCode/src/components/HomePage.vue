@@ -25,11 +25,15 @@ export default {
 </script>
 
 <style scoped>
+.root {
+  height: 100%;
+}
+
 .body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 80%;
   margin: 10px;
 }
 
