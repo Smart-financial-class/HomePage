@@ -1,17 +1,21 @@
 <template>
-  <div class="body">
-    <div id="news">
-      <NewsNav></NewsNav>
+  <div class="root">
+    <HomePageNavBar></HomePageNavBar>
+    <div class="body">
+      <div id="news">
+        <NewsNav></NewsNav>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import NewsNav from '@/components/NewsNav'
+import NewsNav from './NewsNav'
+import HomePageNavBar from './HomePageNavBar'
 
 export default {
   name: 'HomePage',
-  components: { NewsNav },
+  components: { NewsNav, HomePageNavBar },
   data () {
     return {
       title: ['Home']
