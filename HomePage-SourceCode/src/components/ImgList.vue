@@ -30,6 +30,7 @@ div#ImageListRoot {
   position: relative;
   display: inline-block;
   overflow: hidden;
+  margin-right: 10px;
 }
 
 img {
