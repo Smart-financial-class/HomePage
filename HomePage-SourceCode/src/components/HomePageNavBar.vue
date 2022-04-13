@@ -29,6 +29,9 @@ li {
 
 .MyNav {
   padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 .active {

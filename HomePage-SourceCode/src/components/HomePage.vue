@@ -52,6 +52,8 @@ export default {
 }
 
 .body {
+  position: relative;
+  top: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
