@@ -5,6 +5,14 @@
       <div id="news">
         <NewsNav></NewsNav>
       </div>
+      <div class="line">
+        <div class="sites"></div>
+        <div class="sites"></div>
+      </div>
+      <div class="line">
+        <div class="sites"></div>
+        <div class="sites"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -25,6 +33,20 @@ export default {
 </script>
 
 <style scoped>
+#news {
+  width: 50%;
+  height: 20%;
+  margin: 0 20%;
+}
+
+.line {
+  width: 60%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .root {
   height: 100%;
 }
@@ -33,12 +55,15 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 80%;
-  margin: 10px;
+  width: 100%;
 }
 
-#news {
-  width: 50%;
-  height: 50%;
+.sites {
+  width: 30%;
+  margin: 2% 10%;
+  height: 200px;
+  background-color: rgb(217, 255, 252);
 }
 </style>
