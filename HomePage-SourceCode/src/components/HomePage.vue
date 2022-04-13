@@ -30,6 +30,7 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100%;
+  margin: 10px;
 }
 
 #news {
