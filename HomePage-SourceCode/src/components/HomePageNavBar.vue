@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-light navbar-expand-lg bg-light MyNav">
     <div class="container-fluid">
-      <router-link to="/home" class="navbar-brand">HomePage</router-link>
+      <router-link to="/" class="navbar-brand">HomePage</router-link>
       <ul class="nav">
         <li class="nav-item">
           <router-link class="nav-link" to="/" active-class="active">Home</router-link>
