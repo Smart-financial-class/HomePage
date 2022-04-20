@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import ImgList from '@/components/ImgList'
-import NewsTitleList from '@/components/NewsTitleList'
+import ImgList from './ImgList'
+import NewsTitleList from './NewsTitleList'
 
 export default {
   name: 'NewsNav',
