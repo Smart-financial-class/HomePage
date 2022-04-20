@@ -1,17 +1,17 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+  <v-app>
+    <router-view></router-view>
+  </v-app>
 </template>
 
 <script>
+
 export default {
   name: 'App',
-  mounted () {
-    document.getElementById('app').style.height = window.innerHeight + 'px'
-  }
+  components: {},
+
+  data: () => ({
+    //
+  })
 }
 </script>
-
-<style scoped>
-</style>

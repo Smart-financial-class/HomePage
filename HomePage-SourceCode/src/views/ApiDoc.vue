@@ -1,6 +1,6 @@
 <template>
   <div class="screen">
-    <iframe src="./static/apiDoc/apidoc/index.html" frameborder="0"></iframe>
+    <iframe src="../../static/apiDoc/apidoc/index.html" frameborder="0"></iframe>
   </div>
 </template>
 
