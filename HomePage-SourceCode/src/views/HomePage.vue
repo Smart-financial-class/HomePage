@@ -2,12 +2,12 @@
   <v-main>
     <vue-particles
       color="#000000"
-      :particleOpacity="0.5"
-      :particlesNumber="128"
+      :particleOpacity="0.3"
+      :particlesNumber="72"
       shapeType="circle"
-      :particleSize="4"
+      :particleSize="3"
       linesColor="#000000"
-      :linesWidth="2"
+      :linesWidth="1"
       :lineLinked="true"
       :lineOpacity="0.2"
       :linesDistance="150"
