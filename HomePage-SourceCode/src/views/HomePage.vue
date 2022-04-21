@@ -2,21 +2,20 @@
   <v-main>
     <vue-particles
       color="#000000"
-      :particleOpacity="0.3"
+      :particleOpacity="0.5"
       :particlesNumber="72"
       shapeType="circle"
       :particleSize="3"
       linesColor="#000000"
       :linesWidth="1"
       :lineLinked="true"
-      :lineOpacity="0.2"
+      :lineOpacity="0.3"
       :linesDistance="150"
-      :moveSpeed="3"
+      :moveSpeed="2"
       :hoverEffect="true"
-      hoverMode="grab"
+      hoverMode="repulse"
       :clickEffect="true"
       clickMode="push"
-      style="width: 100%; height: 100%"
     >
     </vue-particles>
     <HomePageNavBar></HomePageNavBar>
@@ -104,11 +103,6 @@ export default {
 
 .site-info {
   width: 80%;
-}
-
-#particles-js {
-  width: 100%;
-  height: 100%;
 }
 
 #content {
