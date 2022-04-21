@@ -111,6 +111,9 @@ export default {
   height: 100%;
 }
 
+#content {
+  cursor: default;
+}
 /*#main {*/
 /*  background-image: url("../assets/background.png");*/
 /*  background-size: cover;*/
