@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style>
-
+/*粒子效果作为背景的样式*/
 #particles-js {
   width: 100%;
   height: 100%;

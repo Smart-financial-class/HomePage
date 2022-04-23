@@ -1,5 +1,6 @@
 <template>
   <v-main>
+    <!--背景粒子效果-->
     <vue-particles
       color="#000000"
       :particleOpacity="0.5"
@@ -18,10 +19,10 @@
       clickMode="push"
     >
     </vue-particles>
+    <!--导航栏-->
     <HomePageNavBar></HomePageNavBar>
     <!-- 主页内容主体 -->
-
-    <v-card width="60%" id="content" elevation="4" rounded hover>
+    <v-card width="60%" id="content" elevation="4" rounded hover ref="card">
       <v-card-title class="mt-10 text-h1">智能财务网站主页</v-card-title>
       <!-- 新闻图片轮播 -->
       <NewsCarousel style="width: 80%"></NewsCarousel>
@@ -52,14 +53,15 @@ export default {
   components: {SiteInfo, NewsCarousel, HomePageNavBar},
   data () {
     return {
+      // 项目中各个网站的信息
       sites: [
         {
           title: '智能财务知识网',
           detail: '准备好进入智能财务了么? 欢迎~',
           image: imageKnowledge,
-          reverse: false,
+          reverse: false, // 用于控制图片显示位置
           href: 'http://www.biubiuxtz.cn:9999/finance',
-          color: '#343435'
+          color: '#343435' // 控制卡片背景颜色
         },
         {
           title: '智能财务高校网',
@@ -84,6 +86,7 @@ export default {
 </script>
 
 <style scoped>
+/*内容主体样式*/
 #content {
   position: absolute;
   left: 50%;
@@ -93,56 +96,18 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: default;
 }
 
+/*网站信息容器样式*/
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+/*网站信息样式*/
 .site-info {
   width: 80%;
 }
-
-#content {
-  cursor: default;
-}
-/*#main {*/
-/*  background-image: url("../assets/background.png");*/
-/*  background-size: cover;*/
-/*}*/
-
-/*#news {*/
-/*  width: 50%;*/
-/*}*/
-/*.line {*/
-/*  width: 60%;*/
-/*  height: 200px;*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*  align-items: center;*/
-/*}*/
-
-/*.root {*/
-/*  width: 100%;*/
-/*}*/
-
-/*.body {*/
-/*  position: relative;*/
-/*  top: 10%;*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*  align-items: center;*/
-/*  flex-wrap: wrap;*/
-/*  height: 80%;*/
-/*  width: 100%;*/
-/*}*/
-
-/*.sites {*/
-/*  width: 30%;*/
-/*  margin: 2% 10%;*/
-/*  height: 200px;*/
-/*  background-color: rgb(217, 255, 252);*/
-/*}*/
 </style>

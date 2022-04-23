@@ -1,6 +1,6 @@
 <template>
   <div class="NewsCarouselRoot">
-    <v-carousel continuous interval="3000" class="carousel"
+    <v-carousel continuous interval="3000" class="carousel v-carousel"
                 hide-delimiters
                 show-arrows-on-hover
                 style="height: 100%; width: 100%">

@@ -1,6 +1,6 @@
 <template>
   <v-app-bar dense fixed elevate-on-scroll>
-    <v-app-bar-title style="width: 150px;" @click="toHome" id="NavTitle">HomePage</v-app-bar-title>
+    <v-app-bar-title style="width: 150px;" @click="toHome" id="NavTitle">主页</v-app-bar-title>
     <v-tabs align-with-title color="#40798C">
       <v-tab to="/">Home</v-tab>
       <v-tab href="http://vcafilm.gitee.io/resources/login">资源</v-tab>
@@ -12,27 +12,20 @@
 </template>
 
 <script>
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default {
   name: 'HomePageNavBar',
   methods: {
     toHome () {
       this.$router.push({name: 'HomePage'})
-    },
-    jump (href) {
-      window.open(href)
     }
   }
 }
 </script>
 
 <style scoped>
+/*设定导航标题样式*/
 #NavTitle {
   cursor: pointer;
-}
-
-.tab {
-  color: #FFF;
 }
 </style>
