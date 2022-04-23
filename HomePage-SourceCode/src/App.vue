@@ -7,12 +7,7 @@
 <script>
 
 export default {
-  name: 'App',
-  components: {},
-
-  data: () => ({
-    //
-  })
+  name: 'App'
 }
 </script>
 
