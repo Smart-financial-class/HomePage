@@ -14,7 +14,7 @@
       :linesDistance="150"
       :moveSpeed="2"
       :hoverEffect="true"
-      hoverMode="repulse"
+      hoverMode="grab"
       :clickEffect="true"
       clickMode="push"
     >
@@ -47,6 +47,7 @@ import SiteInfo from '../components/SiteInfo'
 import imageKnowledge from '../assets/knowledge.png'
 import imageSchool from '../assets/school.png'
 import imageResource from '../assets/resource.png'
+import imagePortal from '../assets/portal.png'
 
 export default {
   name: 'HomePage',
@@ -78,6 +79,14 @@ export default {
           reverse: false,
           href: 'http://vcafilm.gitee.io/resources/login',
           color: '#9EC1A3'
+        },
+        {
+          title: '智能财务门户网',
+          detail: '......',
+          image: imagePortal,
+          reverse: true,
+          href: 'http://124.223.164.9/smart-financial/#/',
+          color: '#BFC3C9'
         }
       ]
     }
