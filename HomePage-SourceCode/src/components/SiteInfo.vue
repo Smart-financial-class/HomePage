@@ -14,7 +14,11 @@
 
         <div style="width: 50%; display: flex; align-items: center; flex-direction: column">
           <v-card-title class="text-h5">{{ info.title }}</v-card-title>
-          <v-card-text class="mt-5 mb-3" style="text-align: center">{{ info.detail }}</v-card-text>
+          <div class="mt-3 mb-1">
+            <v-card-text style="text-align: center" v-for="(detail, i) in info.details" :key="i" class="ma-0 pa-0">
+              {{ detail }}
+            </v-card-text>
+          </div>
           <v-card-actions>
             <v-btn class="mt-5" outlined rounded small :href="info.href">前往</v-btn>
           </v-card-actions>

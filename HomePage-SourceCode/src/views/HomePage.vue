@@ -58,7 +58,7 @@ export default {
       sites: [
         {
           title: '智能财务知识网',
-          detail: '准备好进入智能财务了么? 欢迎~',
+          details: ['本网站旨在为对智能财务感兴趣的用户提供尽可能完善的专业知识介绍、当下智能财务对于各个场景的处理的一些知识点和相应的处理方式，并且普及财务知识、宣传推广财务小工具、讨论智能财务专业建设'],
           image: imageKnowledge,
           reverse: false, // 用于控制图片显示位置
           href: 'http://www.biubiuxtz.cn:9999/finance',
@@ -66,7 +66,7 @@ export default {
         },
         {
           title: '智能财务高校网',
-          detail: '目前该网站已经收录了6所高校智能财务专业的相关信息, 包括专业简介，培养目标，课程概览等',
+          details: ['目前该网站已经收录了6所高校智能财务专业的相关信息, 包括专业简介，培养目标，课程概览等'],
           image: imageSchool,
           reverse: true,
           href: 'https://huangda2027.github.io/MajorInfor/index',
@@ -74,7 +74,7 @@ export default {
         },
         {
           title: 'Resources',
-          detail: '......',
+          details: ['提供财务工具的信息门户', '为用户提供方便快捷的使用平台', '展现创新实践课程学习效果'],
           image: imageResource,
           reverse: false,
           href: 'http://vcafilm.gitee.io/resources/login',
@@ -82,7 +82,7 @@ export default {
         },
         {
           title: '智能财务门户网',
-          detail: '......',
+          details: ['......'],
           image: imagePortal,
           reverse: true,
           href: 'http://124.223.164.9/smart-financial/#/',
