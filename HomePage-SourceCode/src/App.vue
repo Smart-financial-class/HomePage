@@ -38,7 +38,6 @@ export default {
   z-index: 1;
   position: fixed;
   width: 100%;
-  background-color: lightblue;
   display: flex;
   justify-content: center;
   align-items: center;

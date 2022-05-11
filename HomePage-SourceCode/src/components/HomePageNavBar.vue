@@ -12,7 +12,7 @@
     <v-tabs align-with-title color="#40798C" optional>
       <v-tab href="#">总站</v-tab>
       <v-tab href="http://vcafilm.gitee.io/resources/login">资源</v-tab>
-      <v-tab href="https://huangda2027.github.io/MajorInfor/index">高校</v-tab>
+      <v-tab href="http://hjlhjlhjl.xyz:8090/MajorInfor/index.html">高校</v-tab>
       <v-tab href="http://www.biubiuxtz.cn:9999/finance">知识</v-tab>
       <v-tab href="http://124.223.164.9/smart-financial/#/">门户</v-tab>
     </v-tabs>

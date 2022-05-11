@@ -69,7 +69,7 @@ export default {
           details: ['目前该网站已经收录了6所高校智能财务专业的相关信息, 包括专业简介，培养目标，课程概览等'],
           image: imageSchool,
           reverse: true,
-          href: 'https://huangda2027.github.io/MajorInfor/index',
+          href: 'http://hjlhjlhjl.xyz:8090/MajorInfor/index.html',
           color: '#1D4E89'
         },
         {

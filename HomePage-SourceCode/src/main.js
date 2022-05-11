@@ -4,14 +4,17 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Vuetify from 'vuetify'
-import 'vuetify/dist/vuetify.min.css'
-
+import ElementUI from 'element-ui'
 import VueParticles from 'vue-particles'
+import 'vuetify/dist/vuetify.min.css'
+import 'element-ui/lib/theme-chalk/index.css'
+import '@/assets/fonts/font.css'
 
-Vue.config.productionTip = false
-
+// 引入Element ui组件
+Vue.use(ElementUI)
 Vue.use(Vuetify)
 Vue.use(VueParticles)
+Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({

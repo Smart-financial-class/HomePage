@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
+    "element-ui": "^2.15.8",
     "parallax-js": "^3.1.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
