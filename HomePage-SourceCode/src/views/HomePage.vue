@@ -61,7 +61,7 @@ export default {
           details: ['本网站旨在为对智能财务感兴趣的用户提供尽可能完善的专业知识介绍、当下智能财务对于各个场景的处理的一些知识点和相应的处理方式，并且普及财务知识、宣传推广财务小工具、讨论智能财务专业建设'],
           image: imageKnowledge,
           reverse: false, // 用于控制图片显示位置
-          href: 'http://www.biubiuxtz.cn:9999/finance',
+          href: 'http://www.biubiuxtz.cn:9999/finance/finance/index.html',
           color: '#343435' // 控制卡片背景颜色
         },
         {
